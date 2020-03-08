@@ -26,32 +26,61 @@ public class Spawning : MonoBehaviour
             if (PossibleDirection == 3)
             {
                 //Top
-                int a = rnd.Next(template.topRooms.Length - 1);
-                Instantiate(template.topRooms[a], transform.position, template.topRooms[a].transform.rotation);
+                if (template.NeedMoreRooms)
+                {
+                    int a = rnd.Next(template.multtopRooms.Length - 1);
+                    Instantiate(template.multtopRooms[a], transform.position, template.multtopRooms[a].transform.rotation);
+                }
+                else
+                {
+                    Instantiate(template.justTop[0], transform.position, template.justTop[0].transform.rotation);
+                }
             }
 
             if (PossibleDirection == 4)
             {
                 //Right
-                int a = rnd.Next(template.rightRooms.Length - 1);
-                Instantiate(template.rightRooms[a], transform.position, template.rightRooms[a].transform.rotation);
+                if (template.NeedMoreRooms)
+                {
+                    int a = rnd.Next(template.multrightRooms.Length - 1);
+                    Instantiate(template.multrightRooms[a], transform.position, template.multrightRooms[a].transform.rotation);
+                }
+                else
+                {
+                    Instantiate(template.justRight[0], transform.position, template.justRight[0].transform.rotation);
+                }
             }
 
             if (PossibleDirection == 1)
             {
                 //Bottom
-                int a = rnd.Next(template.bottomRooms.Length - 1);
-                Instantiate(template.bottomRooms[a], transform.position, template.bottomRooms[a].transform.rotation);
+                if (template.NeedMoreRooms)
+                {
+                    int a = rnd.Next(template.multbottomRooms.Length - 1);
+                    Instantiate(template.multbottomRooms[a], transform.position, template.multbottomRooms[a].transform.rotation);
+                }
+                else
+                {
+                    Instantiate(template.justBottom[0], transform.position, template.justBottom[0].transform.rotation);
+                }
             }
 
             if (PossibleDirection == 2)
             {
                 //Left
-                int a = rnd.Next(template.leftRooms.Length - 1);
-                Instantiate(template.leftRooms[a], transform.position, template.leftRooms[a].transform.rotation);
+                if (template.NeedMoreRooms)
+                {
+                    int a = rnd.Next(template.multleftRooms.Length - 1);
+                    Instantiate(template.multleftRooms[a], transform.position, template.multleftRooms[a].transform.rotation);
+                }
+                else
+                {
+                    Instantiate(template.justLeft[0], transform.position, template.justLeft[0].transform.rotation);
+                }
             }
 
             is_spawned = true;
+
         }
     }
 
@@ -59,6 +88,11 @@ public class Spawning : MonoBehaviour
     {
         if (other.CompareTag("SpawnPoint") && other.GetComponent<Spawning>().is_spawned)
         {
+            if (other.GetComponent<Spawning>().is_spawned == false && is_spawned == false)
+            {
+                Instantiate(template.closedRoom[0], transform.position, Quaternion.identity);
+                is_spawned = true;
+            }
             Destroy(gameObject);
         }
     }

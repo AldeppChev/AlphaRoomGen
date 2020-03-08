@@ -9,6 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/FloorSize.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RoomTemplate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Spawning.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RawModeling.cs" root0="FORCE_HIGHLIGHTING" />
@@ -16,9 +17,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/RawModeling.cs" />
+        <option value="$PROJECT_DIR$/Assets/FloorSize.cs" />
         <option value="$PROJECT_DIR$/Assets/RoomTemplate.cs" />
         <option value="$PROJECT_DIR$/Assets/Spawning.cs" />
-        <option value="$PROJECT_DIR$/Assets/RawModeling.cs" />
       </list>
     </option>
   </component>
@@ -73,6 +75,9 @@
       <workItem from="1582762506840" duration="2121000" />
       <workItem from="1582830495849" duration="2309000" />
       <workItem from="1583507722721" duration="4448000" />
+      <workItem from="1583626107087" duration="1851000" />
+      <workItem from="1583628153396" duration="1127000" />
+      <workItem from="1583629351025" duration="7850000" />
     </task>
     <servers />
   </component>
