@@ -9,7 +9,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/FinalCheck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FloorSize.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/sendCol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RoomTemplate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Spawning.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RawModeling.cs" root0="FORCE_HIGHLIGHTING" />
@@ -21,6 +23,8 @@
         <option value="$PROJECT_DIR$/Assets/FloorSize.cs" />
         <option value="$PROJECT_DIR$/Assets/RoomTemplate.cs" />
         <option value="$PROJECT_DIR$/Assets/Spawning.cs" />
+        <option value="$PROJECT_DIR$/Assets/FinalCheck.cs" />
+        <option value="$PROJECT_DIR$/Assets/sendCol.cs" />
       </list>
     </option>
   </component>
@@ -78,6 +82,10 @@
       <workItem from="1583626107087" duration="1851000" />
       <workItem from="1583628153396" duration="1127000" />
       <workItem from="1583629351025" duration="7850000" />
+      <workItem from="1583676916085" duration="2864000" />
+      <workItem from="1583855036544" duration="7537000" />
+      <workItem from="1583873423692" duration="2608000" />
+      <workItem from="1583876063730" duration="22061000" />
     </task>
     <servers />
   </component>

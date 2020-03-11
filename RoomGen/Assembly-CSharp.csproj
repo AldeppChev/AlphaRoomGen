@@ -58,10 +58,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FinalCheck.cs" />
      <Compile Include="Assets\FloorSize.cs" />
      <Compile Include="Assets\RawModeling.cs" />
      <Compile Include="Assets\RoomTemplate.cs" />
      <Compile Include="Assets\Spawning.cs" />
+     <Compile Include="Assets\sendCol.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/HP/RoomGen/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
