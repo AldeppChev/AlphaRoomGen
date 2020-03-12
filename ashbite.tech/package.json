@@ -1,0 +1,19 @@
+{
+  "name": "ashbite.tech",
+  "version": "1.0.0",
+  "description": "EPITA's S2 Project 's Website ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WiTekh/ashbite.tech.git"
+  },
+  "author": "Ashbite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WiTekh/ashbite.tech/issues"
+  },
+  "homepage": "https://github.com/WiTekh/ashbite.tech#readme"
+}

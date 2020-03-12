@@ -1,0 +1,228 @@
+body
+{
+    background-color: rgb(7, 37, 16);
+    color: whitesmoke;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: 50% 40%;
+    background-size: 120% 220%;
+}
+
+p 
+{
+    margin-left: 10px;
+    text-justify: auto;
+}
+
+
+.title2
+{
+    position: relative;
+    text-align: left;
+    color: rgb(238, 238, 238);
+    font-size: 40px;
+    text-shadow: -2px 0 rgb(71, 38, 15), 0 2px rgb(71, 38, 15), 2px 0 rgb(71, 38, 15), 0 -2px rgb(71, 38, 15);
+    margin-left: 25px;
+}
+
+.title
+{
+    position: relative;
+    text-align: center;
+    color: rgb(238, 238, 238);
+}
+
+h1.title
+{
+    position: relative;
+    text-align: center;
+    color: rgb(238, 238, 238);
+    font-size: 75px;
+    text-shadow: -2px 0 rgb(71, 38, 15), 0 2px rgb(71, 38, 15), 2px 0 rgb(71, 38, 15), 0 -2px rgb(71, 38, 15)
+}
+
+
+
+.center_content
+{
+    display: flex; 
+    justify-content: center;
+}
+
+a:hover{color:rgb(194, 194, 194);}
+a:active{
+    background-color:rgb(92, 70, 45);
+}
+
+.button
+{
+    background-color: rgb(39, 77, 53);
+    border: none;
+    color: rgb(238, 238, 238);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.button.bottom_right
+{
+    background-color: rgb(117, 89, 57);
+    border: none;
+    color: rgb(238, 238, 238);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 10px;
+
+    position: absolute;
+
+    top: 0%;
+    right: 0%;
+}
+
+.download
+{
+    text-decoration: none !important;
+    background-color: rgb(88, 61, 26);
+    color: rgb(255, 255, 0);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.download:hover{color:rgb(255, 200, 90);}
+.download:active{
+    background-color: green;
+}
+
+.photo
+{
+    margin-right: 65px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 7px;
+    box-shadow: 2px 0 rgb(85, 30, 0), 0 1px rgb(85, 30, 0);
+}
+
+/*Image Position Gestion*/
+.upper_left {
+    position: absolute;
+
+    top: 0%;
+    left: 0%;}
+.upper_right{
+    position: absolute;
+
+    top: 0%;
+    right: 0%;}
+.bottom_left{
+    position: absolute;
+
+    bottom: 0%;
+    left: 0%;}
+.bottom_right{
+    position: absolute;
+
+    bottom: 0%;
+    right: 0%;}
+
+/*Dropdown button*/
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 100px;
+    font-size: 32px;
+    border: none;
+    margin : 1px 550px;
+    }
+    
+.dropright {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 100px;
+    font-size: 32px;
+    border: none;
+    margin : 1px 1px 1px -500px;
+    
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #178f27;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin : -1px 550px;
+    }
+
+.rightdropcont {
+    display: none;
+    position: absolute;
+    background-color: #178f27;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin : -1px -500px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 55px;
+    text-decoration: none;
+    display: block;
+    }
+.rightdropcont a {
+    color: rgb(255, 255, 255);
+    padding: 12px 55px;
+    text-decoration: none;
+    display: block;
+    }
+
+.rightdropcont a:hover {background-color: rgb(4, 70, 29);}
+
+.dropdown:hover .rightdropcont {display: block;}
+
+.dropdown:hover .dropright {background-color: #005c04;}
+
+.dropdown-content a:hover {background-color: rgb(4, 70, 29);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #005c04;}
+
+/*Font Gestion*/
+.rob{
+    font-family: Roboto, Arial, Helvetica, sans-serif;}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('/roboto/roboto-medium.woff2') format('woff2'),
+         url('/roboto/roboto-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('/roboto/roboto-regular.woff2') format('woff2'),
+         url('/roboto/roboto-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
