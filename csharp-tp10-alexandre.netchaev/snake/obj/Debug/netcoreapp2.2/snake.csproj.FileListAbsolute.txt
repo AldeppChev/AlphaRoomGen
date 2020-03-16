@@ -1,0 +1,10 @@
+C:\Users\HP\csharp-tp10-alexandre.netchaev\SnakeGame\snake\bin\Debug\netcoreapp2.2\snake.deps.json
+C:\Users\HP\csharp-tp10-alexandre.netchaev\SnakeGame\snake\bin\Debug\netcoreapp2.2\snake.runtimeconfig.json
+C:\Users\HP\csharp-tp10-alexandre.netchaev\SnakeGame\snake\bin\Debug\netcoreapp2.2\snake.runtimeconfig.dev.json
+C:\Users\HP\csharp-tp10-alexandre.netchaev\SnakeGame\snake\bin\Debug\netcoreapp2.2\snake.dll
+C:\Users\HP\csharp-tp10-alexandre.netchaev\SnakeGame\snake\bin\Debug\netcoreapp2.2\snake.pdb
+C:\Users\HP\csharp-tp10-alexandre.netchaev\SnakeGame\snake\obj\Debug\netcoreapp2.2\snake.csprojAssemblyReference.cache
+C:\Users\HP\csharp-tp10-alexandre.netchaev\SnakeGame\snake\obj\Debug\netcoreapp2.2\snake.AssemblyInfoInputs.cache
+C:\Users\HP\csharp-tp10-alexandre.netchaev\SnakeGame\snake\obj\Debug\netcoreapp2.2\snake.AssemblyInfo.cs
+C:\Users\HP\csharp-tp10-alexandre.netchaev\SnakeGame\snake\obj\Debug\netcoreapp2.2\snake.dll
+C:\Users\HP\csharp-tp10-alexandre.netchaev\SnakeGame\snake\obj\Debug\netcoreapp2.2\snake.pdb
