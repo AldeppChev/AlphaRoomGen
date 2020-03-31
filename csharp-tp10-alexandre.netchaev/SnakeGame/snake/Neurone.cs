@@ -63,7 +63,19 @@ namespace snake
          */
         public void Mutate()
         {
-            throw new NotImplementedException();
+            Random rnd = new Random();
+            int a = rnd.Next(0, 100);
+            float b;
+            if (a <= 20)
+            {
+                for (int i = 0; i < weights.Length-1; i++)
+                {
+                    b = rnd.Next(-10, 10);
+                    weights[i] = b;
+                }   
+            }
+            b = rnd.Next(-10, 10);
+            biais = b;
         }
 
         /**

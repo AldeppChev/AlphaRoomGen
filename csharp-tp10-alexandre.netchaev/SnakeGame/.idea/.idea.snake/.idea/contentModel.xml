@@ -11,6 +11,7 @@
         <e p="Game.cs" t="Include" />
         <e p="Generation.cs" t="Include" />
         <e p="Layer.cs" t="Include" />
+        <e p="Makefile" t="Include" />
         <e p="NeuralNetwork.cs" t="Include" />
         <e p="Neurone.cs" t="Include" />
         <e p="Node.cs" t="Include" />

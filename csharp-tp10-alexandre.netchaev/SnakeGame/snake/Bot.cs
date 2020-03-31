@@ -80,10 +80,28 @@ namespace snake
                 System.Threading.Thread.Sleep(30);
             network.Feed(game.GridScan());
             network.FrontProp();
-
             Neurone[] output = network.Output();
-
-            throw new NotImplementedException();
+            double max = output[0].value;
+            int posmax = 0;
+            for (int i = 1; i < output.Length; i++)
+            {
+                if (output[i].value > max)
+                {
+                    max = output[i].value;
+                    posmax = i;
+                }
+            }
+            switch (posmax)
+            {
+                case 0 :
+                    return Snake.Direction.UP;
+                case 1 :
+                    return Snake.Direction.RIGHT;
+                case 2 :
+                    return Snake.Direction.DOWN;
+                default :
+                    return Snake.Direction.LEFT;
+            }
         }
 
         /**

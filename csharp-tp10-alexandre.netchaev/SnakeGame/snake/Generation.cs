@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace snake
 {
@@ -24,18 +25,80 @@ namespace snake
          * Sort bots by decreasing order of fitness
          * FIXME
          */
+        
+        static int Partition(int[] array, int low,
+            int high)
+        {
+            int pivot = array[high];
+
+            int lowIndex = (low - 1);
+            
+            for (int j = low; j < high; j++)
+            {
+                if (array[j] <= pivot)
+                {
+                    lowIndex++;
+
+                    int temp = array[lowIndex];
+                    array[lowIndex] = array[j];
+                    array[j] = temp;
+                }
+            }
+
+            int temp1 = array[lowIndex + 1];
+            array[lowIndex + 1] = array[high];
+            array[high] = temp1;
+
+            return lowIndex + 1;
+        }
+
+        static void Sort(int[] array, int low, int high)
+        {
+            if (low < high)
+            {
+                int partitionIndex = Partition(array, low, high);
+
+                //3. Recursively continue sorting the array
+                Sort(array, low, partitionIndex - 1);
+                Sort(array, partitionIndex + 1, high);
+            }
+        }
+        public static void switchy(Bot[] arr, int a, int b)
+        {
+            Bot backup = arr[b];
+            arr[b] = arr[a];
+            arr[a] = backup;
+        }
         public void Sort()
         {
-            throw new NotImplementedException();
+            for (int i = 1; i < generation.Length; i++)
+            {
+                for (int i1 = i; i1 > 0; i1--)
+                {
+                    if (generation[i1 - 1].Score <= generation[i1].Score)
+                    {
+                        switchy(generation, i1, i1-1);
+                    }
+                }
+            }
         }
-        
+
         /**
          * HINT: Return an array of the n best bots of the generation
          * FIXME
          */
         public Bot[] GetBestBots(int n)
         {
-            throw new NotImplementedException();
+            Sort();
+            Bot[] arr = new Bot[n];
+            if (generation.Length <= n)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    arr[i] = generation[i];
+                }   
+            }
+            return arr;
         }
 
         /**
@@ -75,15 +138,25 @@ namespace snake
          * displayed on stdout
          * FIXME
          */
-        public void NewGen(bool display_best = false)
+        public void NewGen(bool display_best = true)
         {
-            throw new NotImplementedException();
+            Sort();
+            Bot[] bestbots = GetBestBots(generation.Length / 10);
+            Bot[] newgen = new Bot[generation.Length];
+            Random random = new Random();
+            for (int i = 0; i < generation.Length; i++)
+            {
+                int a = random.Next(bestbots.Length);
+                newgen[i] = bestbots[a];
+            }
+            
+            generation = newgen;
         }
 
         /**
          * Each bot of the population play a game
          */
-        public void Play(bool display = false)
+        public void Play(bool display = true)
         {
             for (int i = 0; i < generation.Length; ++i)
                 generation[i].Play(display);
@@ -95,7 +168,11 @@ namespace snake
          */
         public void Train(int nbGen)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < nbGen; i++)
+            {
+                Play();
+                NewGen();
+            }
         }
 
         /**

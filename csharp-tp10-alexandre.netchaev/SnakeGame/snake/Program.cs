@@ -10,7 +10,7 @@ namespace snake
             gen.Train(1000);
             Bot bot = gen.GetBestBots(1)[0];
             bot.Play(true);
-            bot.Save(".save");
+            bot.Save("/Users/HP/csharp-tp10-alexandre.netchaev/snake/bot.out");
         }
     }
 }
